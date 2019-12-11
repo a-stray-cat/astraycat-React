@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HomeBox from './html/homepage';
-import IndexBox from './html/test';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch, } from "react-router-dom";
+import Login from './test/login';
+import Register from './test/register';
 
 
 class IndexPage extends React.Component {
@@ -15,8 +15,8 @@ class IndexPage extends React.Component {
                 <BrowserRouter>
                     <Switch>
                         {/* <Route path="/" exact component={IndexBox}></Route> */}
-                        <Route path="/html/homepage" exact component={HomeBox}></Route>
-                        <Route path="/html/test" exact component={IndexBox}></Route>
+                        <Route path="/test/loign" exact component={Login}></Route>
+                        <Route path="/test/register" exact component={Register}></Route>
                         {/* <Redirect to="/html/index"></Redirect> */}
                     </Switch>
                 </BrowserRouter>

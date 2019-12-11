@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default class IndexBox extends React.Component {
+export default class Register extends React.Component {
 
     getform=()=>{
         fetch('/user/music_form/getAll')
@@ -17,36 +17,28 @@ export default class IndexBox extends React.Component {
     render() {
 
         return (
-            // <Link to="/user/music_form/getAll">获取表单</Link>
             <div>
-                <form action="" method="post">
+                <form action="/user/addUser" method="post">
                     <table>
                         <tr>
                             <td>用户名：</td>
-                            <td><input type="text" name="username"/></td>
+                            <td><input type="text" name="U_username"/></td>
                         </tr>
                         <tr>
                             <td>密码：</td>
-                            <td><input type="password" name="password"/></td>
+                            <td><input type="password" name="U_password"/></td>
                         </tr>
                         <tr>
                             <td>确认密码：</td>
                             <td><input type="password" name="confirmpassword"/></td>
                         </tr>
                         <tr>
-                            <td>姓名：</td>
-                            <td><input type="text" name="name"/></td>
+                            <td>电话号码</td>
+                            <td><input type="text" name="U_phonenumber"/></td>
                         </tr>
                         <tr>
-                            <td>年龄：</td>
-                            <td><input type="text" name="age"/></td>
-                        </tr>
-                        <tr>
-                            <td>性别：</td>
-                            <td>
-                                <input type="radio" name="gender" value="男"/>男
-                                <input type="radio" name="gender" value="女"/>女
-                            </td>
+                            <td>ID</td>
+                            <td><input type="text" name="U_id"/></td>
                         </tr>
                         <tr>
                             <td>

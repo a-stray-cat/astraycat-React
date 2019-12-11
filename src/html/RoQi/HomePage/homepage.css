@@ -1,0 +1,105 @@
+.all {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    background-color: rgb(45, 47, 51);
+}
+
+/* .logo{
+    position: relative;
+    left: 1rem;
+    top:0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../../../image/favicon.ico);
+    background-size:100%;  背景图片更改大小只能用 background-size */
+
+/* } */
+
+.logo {
+    float: left;
+    position: relative;
+    left: 1%;
+    top: 25%;
+    width: 3%;
+    height: 50%;
+}
+
+.Name {
+    float: left;
+    position: relative;
+    left: 4%;
+    top: 19%;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+
+.button1 {
+    float: left;
+    position: relative;
+    left: 10%;
+    top: 30%;
+    width: 4%;
+    height: 1rem;
+}
+
+.sinput {
+    position: relative;
+    left: 15%;
+    top: 18%;
+    float: left;
+    height: 50%;
+    width: 25%;
+    border-radius: 5px;
+    color: aliceblue;
+    border: 1px solid #80796d;
+}
+
+.sbutton {
+    position: relative;
+    left: 15%;
+    top: 18%;
+    float: left;
+    width: 5%;
+    height: 50%;
+    border-radius: 10px;
+    border: 1px solid #80796d;
+}
+
+.headpt {
+    position: relative;
+    left: 40%;
+    top: 20%;
+    float: left;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.daohang{
+    float: left;
+    width: 20%;
+    height: 100%;
+  background-color:rgb(245, 245, 247);
+    padding: 0;
+    font-size: 1.2rem;
+
+ 
+}
+.daohang li{
+  
+    list-style-type:none;
+    text-align: center;
+ 
+}
+.daohang ul{
+    padding: 0;
+}

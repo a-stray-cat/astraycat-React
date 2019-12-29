@@ -1,13 +1,16 @@
 import React from 'react'
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import {  Button } from 'antd';
 import DenLu from './denlu';
+
+import LoginPage from '../EnrollPage/enrollpage';
 var HomePageCss = require('./homepage.css')
 export default class HomePage extends React.Component {
 
     render() {
 
         return (
-
+            <BrowserRouter >
             <div className={HomePageCss.all}>
                 <div className={HomePageCss.header} >
 
@@ -23,14 +26,14 @@ export default class HomePage extends React.Component {
                     <input type="text" placeholder="请输入..." className={HomePageCss.sinput} />
                     <button className={HomePageCss.sbutton}></button>
 
-                    <img className={HomePageCss.headpt} src={require('../../../image/cat.jpg')} alt="标签" />
-
+                    <img className={HomePageCss.headpt} src={require('../../../image/cat.jpg')} alt="标签"/> 
+                    <Button className={HomePageCss.sbutton} href="./denlu" ></Button>
                 </div>
-                <BrowserRouter basename='/'>
+              
                     <div className={HomePageCss.daohang} >
                         <ul >
                             <ul>推荐</ul>
-                            <li ><Link to="">发现音乐</Link>   </li>
+                            <li ><Link to="ceshi">发现音乐</Link>   </li>
                             <li><Link>视频</Link> </li>
                             <li> <Link>朋友</Link></li>
 
@@ -51,16 +54,16 @@ export default class HomePage extends React.Component {
                         </ul>
 
                     </div>
-                    <div>
-                        <DenLu></DenLu>
-                        {/* <Route path="/" exact component={DenLu }></Route> */}
-                        {/* <Route path="/number" exact component={Number}></Route>
-                        <Route path="/image" exact component={Image}></Route> */}
+                    
+                    <div className={HomePageCss.leiro}>
+                      
+                    <Route path="/denlu" exact component={DenLu}></Route>
+              
+                        {/* <Route path="/image" exact component={Image}></Route> */}
                     </div>
-
-                </BrowserRouter>
+                  
             </div>
-
+            </BrowserRouter>
         )
     }
 }

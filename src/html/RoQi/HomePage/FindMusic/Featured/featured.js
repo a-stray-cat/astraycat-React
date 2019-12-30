@@ -1,5 +1,6 @@
+
 import React from 'react'
-import { Carousel, Card } from 'antd';
+import { Carousel, Card,Icon } from 'antd';
 import Featuredless from './featured.less';
 
 
@@ -28,6 +29,9 @@ export default class Featured extends React.Component {
                     </Carousel>
                 </div>
                 <div>
+                    <div>
+                    <p className={FeaturedCss.p1}>精选歌单</p>
+                    <p className={FeaturedCss.more}> 更多<Icon type="arrow-right" /></p>
                     <Card className={ FeaturedCss.card}
                         hoverable
                         style={{ width: 120 } }
@@ -35,9 +39,96 @@ export default class Featured extends React.Component {
                     >
                         <Meta title="王者荣耀" className={Featuredless.customSelect}  />
                     </Card>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (2).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (3).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (4).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    </div>
+                    <div>
+                    <p className={FeaturedCss.p1}>精选视频</p>
+                    <p className={FeaturedCss.more}> 更多<Icon type="arrow-right" /></p>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (2).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (3).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (4).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (1).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    </div>
+                    <div>
+                    <p className={FeaturedCss.p1}>精选电台</p>
+                    <p className={FeaturedCss.more}> 更多<Icon type="arrow-right" /></p>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (3).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (4).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (1).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    <Card className={ FeaturedCss.card}
+                        hoverable
+                        style={{ width: 120 } }
+                        cover={<img alt="example" src={require( '../../../../../image/2 (2).jpg')} />}
+                    >
+                        <Meta title="王者荣耀" className={Featuredless.customSelect}  />
+                    </Card>
+                    </div>
                 </div>
             </div>
 
         )
     }
 }
+

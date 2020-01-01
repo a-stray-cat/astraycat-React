@@ -1,12 +1,14 @@
 
 import React from 'react'
-import {  Card } from 'antd';
-// import Featuredless from './featured.less';
+import { Carousel, Card, Icon } from 'antd';
+import Featuredless from './featured.less';
 import { Link } from 'react-router-dom';
 
+
 const { Meta } = Card;
-var FontListCss = require('./fontlist.css')
-export default class FontList extends React.Component {
+
+var FeaturedCss = require('./featured.css')
+export default class Featuredbanner extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,21 +31,27 @@ export default class FontList extends React.Component {
                 that.setState({ news: data })
             })
     }
-         render() {
+
+    render() {
         const { news } = this.state;
         return (
             <div>
-           {
+                <div>
+                    {
                             news.map((Item, index) => (
-                                <Card  className={FontListCss.card}
+                                <Card  className={FeaturedCss.card}
                                     hoverable
                                     style={{ width: 120 }}
                                     cover={<img src={Item.cover} />}
                                 >
-                                    <Meta title={Item.formName} description="歌单" />
+                                    <Meta title={Item.formName}  description="歌单" />
                                 </Card>
                             ))}
+                </div>
+
             </div>
+
         )
     }
 }
+

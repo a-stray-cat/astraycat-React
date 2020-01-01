@@ -1,15 +1,13 @@
 .people{
     height: 100%;
     width: 100%;
-    overflow: hidden;
+  overflow: scroll;
     border-style: solid;
 }
 .head{ 
     position: relative;
     left: 20%;
-    margin: auto;
-   
-    
+    margin: auto;   
     width: 100%;
 }
 .head li{
@@ -24,5 +22,4 @@
 .body{
    width: 100%;
    height: 100%;
-   overflow: auto;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import {  Button } from 'antd';
 import FindMusic from './FindMusic/findmusic';
+import Xiangqing from './FindMusic/MusicXiangqing/xiangqing';
 var HomePageCss = require('./homepage.css')
 export default class HomePage extends React.Component {
 
@@ -56,7 +57,7 @@ export default class HomePage extends React.Component {
                     <div className={HomePageCss.leiro}>
                       
                     <Route path="/findmusic" exact component={FindMusic}></Route>
-              
+                    <Route path="/xiangqing" exact component={Xiangqing}></Route>
                         {/* <Route path="/image" exact component={Image}></Route> */}
                     </div>
                   

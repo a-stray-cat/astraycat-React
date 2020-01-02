@@ -19,6 +19,7 @@ export default class Featuredbanner extends React.Component {
             }]
         }
     }
+   
     componentDidMount() {
         var that = this;
         fetch("/homepage/musicForm")

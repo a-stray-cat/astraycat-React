@@ -24,7 +24,7 @@ export default class FindMusic extends React.Component {
                         <FontList/>
                  </TabPane>
                     <TabPane tab="排行榜" key="3">
-                    <LeaderBoard/>
+                     <LeaderBoard/>
                 </TabPane>
                 </Tabs>
 

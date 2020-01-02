@@ -103,7 +103,7 @@ export default class Product extends React.Component {
         }
     }
 
-    componentDidMount(){
+    update(){
         var data = {
             "fromId": 1,
             "userId": 1,

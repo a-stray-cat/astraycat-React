@@ -22,26 +22,19 @@
 }
 
 .card {
-  height: 100px;
-  width: 100px;
+  height: 220px;
+  width: 150px;
   display: inline-block;
-  margin: 40px 20px 20px 10px;
+  margin: 50px -30px 35px 70px;
   
 }
-
-
-
 .p1{
   float: left;
   position: relative;
-  left: 80px;
-  font-size: 19px;
-  margin: 0;
+  left: 70px;
 }
 .more{ 
- 
+  float: right;
   position: relative;
- left: 600px;
- top: -20px;
-  font-size: 19px;
+  right: 100px;
 }

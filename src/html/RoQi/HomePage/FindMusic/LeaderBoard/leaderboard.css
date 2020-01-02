@@ -1,17 +1,16 @@
 .p1 {
     font-size: 20px;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 0px;
 }
 
  .td {
-  
     float: left;
     display: inline-block;
     
  }
 .td1{
     float: right;
-  display: inline-block;
+    display: inline-block;
   
 }
 
@@ -23,11 +22,13 @@ tr {
 }
 .card{
     float: left;
+    /* width: 400px; */
 }
 .card1{
     float: right;
+    /* width: 250px; */
 }
 .card2{
-    position: relative;
+    float: right;
 
 }

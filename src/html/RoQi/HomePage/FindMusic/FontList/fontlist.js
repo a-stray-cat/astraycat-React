@@ -42,7 +42,7 @@ export default class FontList extends React.Component {
                         <Card className={FontListCss.card}
                             hoverable
                             style={{ width: 120 }}
-                            cover={<img src={Item.cover} />}
+                            cover={<img src={Item.cover}style={{width:120,height:130}} />}
                         >
                             <Meta title={Item.formName} description="歌单" />
                         </Card>

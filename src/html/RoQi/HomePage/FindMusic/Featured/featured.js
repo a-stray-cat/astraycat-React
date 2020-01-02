@@ -70,17 +70,17 @@ export default class Featured extends React.Component {
                     </Carousel>
                 </div>
                 <div>
-                    <p className={FeaturedCss.p1}>推荐歌单</p>
-                    <p className={FeaturedCss.more}>更多<Icon type="arrow-right" /></p>
+                    <h3 className={FeaturedCss.p1}>推荐歌单</h3>
+                    <h3 className={FeaturedCss.more}>更多<Icon type="arrow-right" /></h3>
                     <Banner1></Banner1>
-                    <p className={FeaturedCss.p1}>推荐视频</p>
-                    <p className={FeaturedCss.more}>更多<Icon type="arrow-right" /></p>
+                    <h3 className={FeaturedCss.p1}>推荐视频</h3>
+                    <h3 className={FeaturedCss.more}>更多<Icon type="arrow-right" /></h3>
                     <Featuredbanner />
-                    <p className={FeaturedCss.p1}>推荐电台</p>
-                    <p className={FeaturedCss.more}>更多<Icon type="arrow-right" /></p>
+                    <h3 className={FeaturedCss.p1}>推荐电台</h3>
+                    <h3 className={FeaturedCss.more}>更多<Icon type="arrow-right" /></h3>
                     <Featuredbanner />
-                    <p className={FeaturedCss.p1}>推荐歌单</p>
-                    <p className={FeaturedCss.more}>更多<Icon type="arrow-right" /></p>
+                    <h3 className={FeaturedCss.p1}>推荐歌单</h3>
+                    <h3 className={FeaturedCss.more}>更多<Icon type="arrow-right" /></h3>
                     <Featuredbanner />
                 </div>
 

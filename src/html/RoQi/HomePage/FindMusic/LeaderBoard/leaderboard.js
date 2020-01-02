@@ -19,24 +19,24 @@ export default class LeaderBoard extends React.Component {
         return (
             <div>
                 <div style={{ background: '#ECECEC', padding: '30px' }}   className={ LeadereCss.card}>
-                    <Card title="Card title" bordered={false} style={{ width: 300 }}>
+                    <Card title="飙升榜" bordered={false} style={{ width: 320 }}>
 
                         <Rise></Rise>
                     </Card>
                 </div>
                 <div style={{ background: '#ECECEC', padding: '30px' }}  className={ LeadereCss.card1}>
-                    <Card title="Card title" bordered={false} style={{ width: 300 }}>
+                    <Card title="新歌榜" bordered={false} style={{ width: 330 }}>
 
                         <New></New>
                     </Card>
                 </div>
-                {/* <div style={{ background: '#ECECEC', padding: '30px' }}  className={ LeadereCss.card2}>
-                    <Card title="Card title" bordered={false} style={{ width: 300 }}>
+                <div style={{ background: '#ECECEC', padding: '30px' }}  className={ LeadereCss.card2}>
+                    <Card title="热门榜" bordered={false} style={{ width: 330 }}>
 
 
                         <Hot></Hot>
                     </Card>
-                </div> */}
+                </div>
 
 
 

@@ -43,7 +43,7 @@ export default class Banner1 extends React.Component {
                                 <Card  className={FeaturedCss.card}
                                     hoverable
                                     style={{ width: 120 }}
-                                    cover={<img src={Item.cover} />}
+                                    cover={<img src={Item.cover} style={{width:120,height:130}}/>}
                                 >
                                     <Meta title={Item.formName} description="歌单" />
                                 </Card>

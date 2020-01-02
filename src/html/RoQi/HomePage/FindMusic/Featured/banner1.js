@@ -8,22 +8,21 @@ import { Link } from 'react-router-dom';
 const { Meta } = Card;
 
 var FeaturedCss = require('./featured.css')
-export default class Featuredbanner extends React.Component {
+export default class Banner1 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             news: [{
               
-                videoName:"",
-                uploadName:"",
-                label:"",
-                storagePath:""
+                poster: "",
+                cover:"",
+                formName:""
             }]
         }
     }
     componentDidMount() {
         var that = this;
-        fetch("/homepage/videoForm")
+        fetch("/homepage/musicForm")
             .then(function (res) {
                 console.log(res);
                 return res.json();
@@ -39,18 +38,15 @@ export default class Featuredbanner extends React.Component {
         return (
             <div>
                 <div>
-                    {
+                {
                             news.map((Item, index) => (
-                                
                                 <Card  className={FeaturedCss.card}
                                     hoverable
                                     style={{ width: 120 }}
-                                    cover={<img src={Item.storagePath} />}
-                                    
+                                    cover={<img src={Item.cover} />}
                                 >
-                                    <Meta title={Item.videoName}  description="歌单" />
+                                    <Meta title={Item.formName} description="歌单" />
                                 </Card>
-                              
                             ))}
                 </div>
 

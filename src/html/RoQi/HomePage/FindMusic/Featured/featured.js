@@ -4,6 +4,7 @@ import { Carousel, Card, Icon } from 'antd';
 import Featuredless from './featured.less';
 import { Link } from 'react-router-dom';
 import Featuredbanner from "./featuredbanner"
+import Banner1 from './banner1';
 
 const { Meta } = Card;
 
@@ -52,9 +53,17 @@ export default class Featured extends React.Component {
                     </Carousel>
                 </div>
                 <div>
+                    <p className={FeaturedCss.p1}>推荐歌单</p>
+                    <p className={FeaturedCss.more}>更多<Icon type="arrow-right" /></p>
+                    <Banner1></Banner1>
+                    <p className={FeaturedCss.p1}>推荐视频</p>
+                    <p className={FeaturedCss.more}>更多<Icon type="arrow-right" /></p>
                     <Featuredbanner />
+                    <p className={FeaturedCss.p1}>推荐电台</p>
+                    <p className={FeaturedCss.more}>更多<Icon type="arrow-right" /></p>
                     <Featuredbanner />
-                    <Featuredbanner />
+                    <p className={FeaturedCss.p1}>推荐歌单</p>
+                    <p className={FeaturedCss.more}>更多<Icon type="arrow-right" /></p>
                     <Featuredbanner />
                 </div>
 

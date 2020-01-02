@@ -55,7 +55,7 @@ export default class DenLu extends React.Component {
                 <div  className={DenLuCss.center}>
                   <from>
            
-            <Input className={DenLuCss.right1}  prefix={<Icon type="phone"style={{ color: 'rgba(0,0,0,.25)' }}/>} style={{width:300}} placeholder="Username"
+            <Input className={DenLuCss.right1}  prefix={<Icon type="user"style={{ color: 'rgba(0,0,0,.25)' }}/>} style={{width:300}} placeholder="Username"
             name="username" value={this.state.username} onChange={e=>this.changeValue(e)}/>
             <Input  className={DenLuCss.right1} prefix={<Icon type="lock"style={{ color: 'rgba(0,0,0,.25)' }}/>} style={{width:300}}    placeholder="Password"  
             name="userPassword" value={this.state.userPassword} onChange={e=>this.changeValue(e)}  />

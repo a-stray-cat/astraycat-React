@@ -1,0 +1,33 @@
+.p1 {
+    font-size: 20px;
+    margin: 0 0 0 20px;
+}
+
+ .td {
+  
+    float: left;
+    display: inline-block;
+    
+ }
+.td1{
+    float: right;
+  display: inline-block;
+  
+}
+
+tr {
+    height: 10px;
+    width: 20px;
+    border: 1px;
+    
+}
+.card{
+    float: left;
+}
+.card1{
+    float: right;
+}
+.card2{
+    position: relative;
+
+}

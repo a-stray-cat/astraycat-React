@@ -9,6 +9,7 @@ import DenLu from './html/RoQi/HomePage/denlu';
 import ZhuCe from './html/RoQi/HomePage/zhuce';
 import WangJi from './html/RoQi/HomePage/wangji';
 import Admin from './html/RoQi/Admin/admin';
+import User from './html/RoQi/Admin/User/user'
 class IndexPage extends React.Component {
 
     render() {
@@ -22,6 +23,7 @@ class IndexPage extends React.Component {
                         <Route path="/zhuce" exact component={ZhuCe} history={this.props.history}></Route>
                         <Route path="/wangji" exact component={WangJi} history={this.props.history}></Route>
                         <Route path="/admin" exact component={Admin} history={this.props.history}></Route>
+                        <Route path="/admin/user" exact component={Admin} history={this.props.history}></Route>
                         {/* <Redirect to="/html/index"></Redirect> */}
                     </Switch>
                 </BrowserRouter>

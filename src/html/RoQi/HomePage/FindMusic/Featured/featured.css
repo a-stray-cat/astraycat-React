@@ -25,14 +25,12 @@
   height: 100px;
   width: 100px;
   display: inline-block;
-  margin: 40px -40px 20px 90px;
+  margin: 40px -40px 20px 70px;
   
 }
 
-.ant-card-body {
-  padding: 12px !important;
-  zoom: 1;
-}
+
+
 .p1{
   float: left;
   position: relative;

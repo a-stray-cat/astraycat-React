@@ -1,7 +1,7 @@
 import React from 'react'
 import { Input, Icon, Button, message } from 'antd';
 import { Link } from 'react-router-dom';
-import Axios from 'axios'
+// import Axios from 'axios'
 var DenLuCss = require('./denlu.css')
 class DenLu extends React.Component {
   constructor(props) {

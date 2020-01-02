@@ -14,7 +14,9 @@ export default class Featured extends React.Component {
         super(props);
         this.state = {
             news: [{
-                poster: ""
+                poster: "",
+                chartId:"",
+                userId:""
             }]
         }
     }
@@ -30,7 +32,22 @@ export default class Featured extends React.Component {
                 that.setState({ news: data })
             })
     }
-
+    upload = () => {
+        var data = {
+          "charId": this.state.charId,
+          "userId": this.state.userId,
+        }
+        //fetch
+        fetch("/musicForm/musicInfo",{
+          method:"post",
+          headers:{
+            "Content-Type":"application/json"
+          },
+          body:JSON.stringify(data)
+        }).then(response=>response.json())
+        .then(result=>{
+            this.setState({ newsItem: result });
+        })}
     render() {
         const { news } = this.state;
         return (
@@ -42,12 +59,12 @@ export default class Featured extends React.Component {
                             news.map((Item, index) => (
                                 <div className={FeaturedCss.lunbot1}    >
                                     <li key={index} className={FeaturedCss.lunbot1}>
-                                        <Link to={'findmusic/musicxiangqing/${Item.formId}'} target="_blank">
+                                        <Link to={'/xiangqing?formId='+Item.chartId} onClick={this.upload}>
+                                        {/* <Link to={'findmusic/musicxiangqing/${Item.chartId}'} target="_blank"> */}
                                             <Carousel autoplay>
-                                                <img src={Item.poster} />
+                                                <img src={Item.poster} />                                             
                                             </Carousel>
-                                        </Link>
-
+                                        </Link>         
                                     </li></div>
                             ))}
                     </Carousel>

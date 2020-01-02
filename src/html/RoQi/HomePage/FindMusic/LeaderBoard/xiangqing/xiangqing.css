@@ -1,0 +1,23 @@
+.Card{
+    height: 220px;
+    width: 200px;
+    margin: 30px;
+}
+.Cd{
+    float: left;
+}
+.p{
+    margin: 15px;
+    float: left;
+    font-size: 50px;
+    position: relative;
+    left: 50px;
+}
+.anniu{
+    height: 50px;
+    position: relative;
+    float: left;
+    left: -100px;
+    top: 200px;
+    margin-right: 20px;
+}
